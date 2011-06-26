@@ -1,0 +1,30 @@
+<html>
+  <script>
+function getReady(_callback) {
+    var xhr = new XMLHttpRequest();
+    var url = chrome.extension.getURL("content.js");
+    xhr.open("GET", url, true);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4) {
+            if (xhr.responseText) {
+              _callback(xhr.responseText);
+            } else {
+              _callback(null);
+            }
+      }
+    }
+    xhr.send();
+}
+
+chrome.extension.onRequest.addListener(function(request,sender,sendResponse) {
+    switch (request.action) {
+        case "getReady":
+            getReady(sendResponse);
+            break;
+        default:
+            break;
+    }
+});
+
+  </script>
+</html>

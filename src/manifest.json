@@ -1,0 +1,15 @@
+{
+
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "js": [ "jquery.min.js","content_loader.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "icons": {
+      "128": "follow.png"
+   },
+   "name": "Weibo Follow Only",
+   "permissions": [ "tabs", "http://*/*" ],
+   "update_url": "https://raw.github.com/jsonvi/weibo_follow_only/master/updates.xml",
+   "version": "1.0.0"
+}
