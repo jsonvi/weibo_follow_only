@@ -9,7 +9,7 @@
       "128": "follow.png"
    },
    "name": "Weibo Follow Only",
-   "permissions": [ "tabs", "http://*/*" ],
+   "permissions": [ "http://*/*" ],
    "update_url": "https://raw.github.com/jsonvi/weibo_follow_only/master/updates.xml",
-   "version": "1.0.1"
+   "version": "1.0.2"
 }

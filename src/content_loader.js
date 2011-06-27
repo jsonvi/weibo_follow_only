@@ -3,6 +3,7 @@ $(document).ready(function(){
         if(!response) {
             return;
         }
+        // append new script to body
         $("body").append(response);
     }); 
 
