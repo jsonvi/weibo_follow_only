@@ -3,7 +3,7 @@
    "background_page": "background.html",
    "content_scripts": [ {
       "js": [ "jquery.min.js","content_loader.js" ],
-      "matches": [ "http://*/*", "https://*/*" ]
+      "matches": [ "http://weibo.com/*" ]
    } ],
    "icons": {
       "128": "follow.png"
